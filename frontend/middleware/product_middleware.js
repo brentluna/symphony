@@ -3,9 +3,10 @@ import {ProductConstants, receiveProducts} from '../actions/product_actions';
 
 const ProductMiddleware = store => next => action => {
   switch(action.type) {
+      
     case ProductConstants.FETCH_PRODUCTS:
       const successResponse = products => {
-        store.dispatch(receiveProducts(products));
+        store.dispatch(receiveProducts(JSON.parse(products)));
       };
       fetchProducts(successResponse);
       return next(action);

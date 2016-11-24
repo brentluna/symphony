@@ -8,7 +8,7 @@ export const fetchProducts = () => ({
 
 export const receiveProducts = products => ({
   type: ProductConstants.RECEIVE_PRODUCTS,
-  products
+  products: products
 });
 
 
