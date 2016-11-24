@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-export const fetchAllProducts = success => (
+export const fetchProducts = success => (
   $.ajax({
     method: 'get',
     url: 'http://sneakpeeq-sites.s3.amazonaws.com/interviews/ce/feeds/store.js',
