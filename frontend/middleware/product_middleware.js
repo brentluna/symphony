@@ -1,4 +1,3 @@
-import {ProductConstants} from '../actions/product_actions';
 import {fetchProducts} from '../api_utils/product_api_util';
 import {ProductConstants, receiveProducts} from '../actions/product_actions';
 
