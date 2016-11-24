@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductItemDetail from './product_item_detail';
+require('../../../sass/product.scss');
 
 class ProductItemList extends React.Component {
   constructor(props){
@@ -12,7 +13,7 @@ class ProductItemList extends React.Component {
     if (this.props.products && this.props.products.length) {
       this.props.products.forEach((product, idx) => {
         lis.push(<ProductItemDetail
-                  price={product.price}
+                  price={product.msrpInCents}
                   name={product.name}
                   image={`http:${product.mainImage.ref}`}
                   key={product.id} />); 
