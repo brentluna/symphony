@@ -3,7 +3,13 @@ require('../../../sass/navbar.scss');
 
 const NavBar = () => (
   <header className='navbar'>
-    <h1>Online Store</h1> 
+    <div className='navbar-group'>
+      <div className='title-container'>
+          <h1>Fiji Fun</h1> 
+        <p>Water is the essence of moisture...</p>
+      </div>
+      <i className="material-icons">shopping_cart</i>
+    </div>
   </header>
 );
 
