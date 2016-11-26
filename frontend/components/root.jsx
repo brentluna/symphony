@@ -2,7 +2,7 @@ import React from 'react';
 import {fetchProducts} from '../actions/product_actions';
 import {Provider} from 'react-redux';
 import ProductItemListContainer from './products/product_item_list_container';
-import NavBar from './navbar/navbar';
+import NavBarContainer from './navbar/navbar_container';
 require('../../sass/reset.scss');
 
 class Root extends React.Component {
@@ -32,7 +32,7 @@ class Root extends React.Component {
     return(
       <Provider store={this.props.store}>
         <div onClick={this.toggleClass}>
-          <NavBar />
+          <NavBarContainer />
           <ProductItemListContainer />
         </div>
       </Provider>

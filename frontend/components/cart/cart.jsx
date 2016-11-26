@@ -7,6 +7,7 @@ class Cart extends React.Component {
     super(props);
     this.mapItems = this.mapItems.bind(this);
   }
+  
 
   mapItems() {
     let cartItems = [];
@@ -14,7 +15,11 @@ class Cart extends React.Component {
       for (let item in this.props.cart) {
         cartItems.push(
           <li className='cart-li' key={item}>
+            <div className='cart-button-remove-div'>
+              <i className="material-icons remove-icon" 
+                onClick={() => this.props.removeProduct(item)}>remove</i>
             <div className='cart-name'>{item}</div>
+          </div>
             <div className='cart-qty'>{this.props.cart[item]}</div> 
           </li>
         );
