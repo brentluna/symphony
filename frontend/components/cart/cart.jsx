@@ -27,7 +27,7 @@ class Cart extends React.Component {
   
   render() {
     return (
-      <ul className='cart-ul'>
+      <ul id='cart-ul' className='hidden'>
         {this.mapItems()}
       </ul>
     )

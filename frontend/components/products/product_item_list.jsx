@@ -8,6 +8,7 @@ class ProductItemList extends React.Component {
   constructor(props){
     super(props);
     this.createList = this.createList.bind(this);
+    this.toggleSortBy = this.toggleSortBy.bind(this);
   }
 
   sortByDropDown() {
@@ -37,13 +38,18 @@ class ProductItemList extends React.Component {
     return lis;
   }
 
+  toggleSortBy() {
+    let targ = document.getElementById('sort-by-ul');
+    targ.className === 'hidden' ? targ.className = 'sort-by-ul' : targ.className ='hidden';
+  }
+
   render() {
     return (
       <div className='product-container'>
         <div className='sort-bar-container'>
           <div className='spacer'></div>
-          <div className='sort-by'> Sort By 
-          <ul className='sort-by-ul'> 
+          <div className='sort-by' onClick={this.toggleSortBy}> Sort By 
+          <ul className='hidden' id='sort-by-ul'> 
             {this.sortByDropDown()}
         </ul>
       </div>

@@ -38,13 +38,16 @@
   z-index: 1;
   width: 250px;
 }
+/*
 .cart-div:hover {
   .cart-ul {
     display: flex;
   }
 }
+*/
+
 .cart-ul {
-      display: none;
+    display: flex;
     flex-direction: column;
     background: whitesmoke;
     padding: 10px;
@@ -65,3 +68,10 @@
   border-bottom: none;
 }
 
+@media (max-width: 575px) {
+  .navbar-group {
+    p {
+      display: none;
+    }
+  }
+}

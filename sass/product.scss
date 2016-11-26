@@ -64,20 +64,23 @@
 
 .sort-by {
   width: 60px;
-}
-.sort-by:hover {
-  .sort-by-ul {
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-  }
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
 }
 
+
+
 .sort-by-ul {
-  display: none;
+  display: flex;
    position: absolute;
   background: whitesmoke;
-  
+  top: 122px;
+  right: 153px;
+  border: 1px solid black;
+  flex-direction: column;
+  z-index: 1;
   li {
     padding: 5px;
     cursor: pointer;
