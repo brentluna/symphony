@@ -1,6 +1,7 @@
 import {connect} from 'react-redux';
 import ProductItemList from './product_item_list';
 import {applySort} from '../../actions/sort_actions';
+import {receiveProduct} from '../../actions/cart_actions';
 
 const sortMap = {
   'Price: Low': (a, b) => {
@@ -36,7 +37,7 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => ({
- // receiveProduct: product => dispatch() 
+  receiveProduct: product => dispatch(receiveProduct(product)),
   applySort: sort => dispatch(applySort(sort))
 });
 

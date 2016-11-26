@@ -8,7 +8,6 @@ class ProductItemList extends React.Component {
   constructor(props){
     super(props);
     this.createList = this.createList.bind(this);
-    this.state = {sorted: 'low'};
   }
 
   sortByDropDown() {
@@ -30,6 +29,7 @@ class ProductItemList extends React.Component {
         lis.push(<ProductItemDetail
                   price={product.msrpInCents}
                   name={product.name}
+                  addToCart={() => this.props.receiveProduct(product.name)}
                   image={`http:${product.mainImage.ref}`}
                   key={product.id} />); 
       });
@@ -40,13 +40,15 @@ class ProductItemList extends React.Component {
   render() {
     return (
       <div className='product-container'>
-        <div>
+        <div className='sort-bar-container'>
+          <div className='spacer'></div>
           <div className='sort-by'> Sort By 
           <ul className='sort-by-ul'> 
             {this.sortByDropDown()}
         </ul>
       </div>
-        </div>
+      
+      </div>
         <ul className='product-ul'>
           {this.createList()}
         </ul>
