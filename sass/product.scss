@@ -68,7 +68,7 @@
   padding: 5px;
   margin: 5px;
   cursor: pointer;
-  position: fixed;
+  position: relative;
   margin-left: 100px;
 }
 
@@ -79,7 +79,7 @@
    position: absolute;
   background: whitesmoke;
   top: 26px;
-  right: -31px;
+  right: -1px;
   border: 1px solid black;
   flex-direction: column;
   z-index: 1;
