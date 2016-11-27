@@ -18,11 +18,16 @@ class Root extends React.Component {
   toggleClass(e) {
     let cart = document.getElementById('cart-ul');
     let sortBy = document.getElementById('sort-by-ul');
+    let filter = document.getElementById('checkbox-ul');
     if (e.target.className !== 'material-icons' && e.target.className !== 'cart-ul') {
       cart.className === 'cart-ul' ? cart.className="hidden" : 0;
     }
     if (e.target.className !== 'sort-by') {
       sortBy.className === 'sort-by-ul' ? sortBy.className = 'hidden' : 0;
+    }
+    if (e.target.className !== 'checkbox-ul' && e.target.className !== 'cbox' &&
+      e.target.className !== 'checkbox-div') {
+      filter.className === 'checkbox-ul' ? filter.className = 'hidden' : 0;
     }
 
     e.stopPropagation();

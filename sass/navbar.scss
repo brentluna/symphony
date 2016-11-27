@@ -77,10 +77,14 @@
   border-bottom: none;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 815px) {
   .navbar-group {
     p {
       display: none;
     }
+    h1 {
+      display: none;
+    }
   }
 }
+

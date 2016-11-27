@@ -1,0 +1,35 @@
+.checkbox-ul {
+  display: flex;
+   position: absolute;
+  background: whitesmoke;
+  top: 26px;
+  left: -1px;
+  border: 1px solid black;
+  flex-direction: column;
+  z-index: 1;
+  width: 150px;
+  li {
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+
+  li:hover {
+    opacity: .7;
+  }
+  
+}
+
+.checkbox-div {
+  width: 50px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  position: fixed;
+
+}

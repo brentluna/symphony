@@ -25,7 +25,7 @@ class Cart extends React.Component {
         );
       }
     } else {
-      cartItems.push(<li>Empty</li>)
+      cartItems.push(<li key={'empty'}>Empty</li>)
     }
     return cartItems;
   }

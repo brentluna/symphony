@@ -68,6 +68,8 @@
   padding: 5px;
   margin: 5px;
   cursor: pointer;
+  position: fixed;
+  margin-left: 100px;
 }
 
 
@@ -76,11 +78,12 @@
   display: flex;
    position: absolute;
   background: whitesmoke;
-  top: 122px;
-  right: 153px;
+  top: 26px;
+  right: -31px;
   border: 1px solid black;
   flex-direction: column;
   z-index: 1;
+  width: 100px;
   li {
     padding: 5px;
     cursor: pointer;
