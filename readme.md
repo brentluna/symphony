@@ -67,6 +67,8 @@ const mapStateToProps = state => {
   });
 }
 ```
+![sortby](./sortby.png)
+
 Along with the ability to sort the products, you can also filter them on
 categories such as sleeves, straws, cufflinks, and less than $20. I do this
 using redux to keep track of the user selected filters and then select the
@@ -97,12 +99,13 @@ let filteredProducts = [];
 I also added a client side cart, where you can click "Add to Cart" on a product
 and it will be viewable via a drop down from the cart icon. I utilized redux to
 manage actions to update the cart.
+![cart](./cart.png)
 
 ## Future Directions 
 - Utilize React Router and create a product page component where you can view
   more on each product
 
-- Add unit jest unit testing
+- Add jest unit testing
 
 - Polish up the design
 
