@@ -1,8 +1,7 @@
 import React from 'react';
 import ProductItemDetail from './product_item_detail';
 require('../../../sass/product.scss');
-
-import Collapsible from 'react-collapsible';
+import FilterContainer from '../filter/filter_container';
 
 class ProductItemList extends React.Component {
   constructor(props){
@@ -47,7 +46,7 @@ class ProductItemList extends React.Component {
     return (
       <div className='product-container'>
         <div className='sort-bar-container'>
-          <div className='spacer'></div>
+          <FilterContainer /> 
           <div className='sort-by' onClick={this.toggleSortBy}> Sort By 
           <ul className='hidden' id='sort-by-ul'> 
             {this.sortByDropDown()}

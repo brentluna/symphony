@@ -27,7 +27,26 @@ const mapStateToProps = state => {
   let sortedProducts = []; 
   if (state.products && state.products.products && state.products.products.length) {
     let sortType = sortMap[state.sort];
-    sortedProducts = state.products.products.sort(sortType);
+    let filteredProducts = [];
+    if (!Object.keys(state.filters).length) {
+      filteredProducts = state.products.products;
+    }
+    for (let filter in state.filters) {
+      
+      if (filter === '1200') {
+        let newProds = state.products.products.filter(prod => {
+          return prod.msrpInCents < 1200; 
+        }); 
+        filteredProducts = filteredProducts.concat(newProds);
+      } else {
+
+        let newProds = state.products.products.filter(prod => {
+          return prod.name.toLowerCase().indexOf(filter) !== -1
+        });
+        filteredProducts = filteredProducts.concat(newProds);
+      }
+    }
+    sortedProducts = filteredProducts.sort(sortType);
   }
 
   return({
