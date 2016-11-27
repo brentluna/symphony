@@ -1,5 +1,7 @@
 # Store Page Demo
 
+[Live Site](http://brentluna.com/symphony)
+
 This is an example of an e-commerce store's product page. 
 
 ## Technologies Used
