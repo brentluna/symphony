@@ -63,13 +63,14 @@
 }
 
 .sort-by {
-  width: 60px;
-  border: 1px solid black;
+  width: 52px;
+  border: 1px solid darkgray;
   padding: 5px;
   margin: 5px;
   cursor: pointer;
   position: relative;
   margin-left: 100px;
+  font-size: 14px;
 }
 
 
@@ -78,9 +79,9 @@
   display: flex;
    position: absolute;
   background: whitesmoke;
-  top: 26px;
+  top: 24px;
   right: -1px;
-  border: 1px solid black;
+  border: 1px solid darkgray;
   flex-direction: column;
   z-index: 1;
   width: 100px;

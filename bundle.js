@@ -58,11 +58,11 @@
 	
 	var _root2 = _interopRequireDefault(_root);
 	
-	var _store = __webpack_require__(230);
+	var _store = __webpack_require__(232);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
-	var _product_api_util = __webpack_require__(238);
+	var _product_api_util = __webpack_require__(240);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -21506,7 +21506,7 @@
 	
 	var _product_item_list_container2 = _interopRequireDefault(_product_item_list_container);
 	
-	var _navbar_container = __webpack_require__(222);
+	var _navbar_container = __webpack_require__(224);
 	
 	var _navbar_container2 = _interopRequireDefault(_navbar_container);
 	
@@ -21518,7 +21518,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(228);
+	__webpack_require__(230);
 	
 	var Root = function (_React$Component) {
 	  _inherits(Root, _React$Component);
@@ -23366,9 +23366,9 @@
 	
 	var _product_item_list2 = _interopRequireDefault(_product_item_list);
 	
-	var _sort_actions = __webpack_require__(220);
+	var _sort_actions = __webpack_require__(222);
 	
-	var _cart_actions = __webpack_require__(221);
+	var _cart_actions = __webpack_require__(223);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -23658,7 +23658,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".product-container {\n  width: 80%;\n  margin: 0 auto;\n  background: white;\n  height: 90%;\n  overflow-y: auto; }\n\n.product-item-detail-container {\n  width: 250px;\n  height: 300px;\n  background: whitesmoke;\n  border: 1px solid black;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  margin: 20px; }\n\n.add-to-cart {\n  background: #ff9e00;\n  text-align: center;\n  padding: 10px;\n  cursor: pointer; }\n\n.add-to-cart:hover {\n  opacity: .8; }\n\n.item-detail-info {\n  display: flex;\n  flex-direction: column; }\n  .item-detail-info h4 {\n    padding: 5px;\n    font-size: 14px; }\n  .item-detail-info div {\n    padding: 5px;\n    font-size: 12px;\n    text-align: right; }\n\n.product-ul {\n  width: 80%;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  margin: 0 auto; }\n\n.item-image-container {\n  width: 210px;\n  margin: 0 auto;\n  padding-top: 15px;\n  height: 195px; }\n  .item-image-container img {\n    height: 100%;\n    width: 100%; }\n\n.sort-by {\n  width: 60px;\n  border: 1px solid black;\n  padding: 5px;\n  margin: 5px;\n  cursor: pointer;\n  position: relative;\n  margin-left: 100px; }\n\n.sort-by-ul {\n  display: flex;\n  position: absolute;\n  background: whitesmoke;\n  top: 26px;\n  right: -1px;\n  border: 1px solid black;\n  flex-direction: column;\n  z-index: 1;\n  width: 100px; }\n  .sort-by-ul li {\n    padding: 5px;\n    cursor: pointer;\n    border-bottom: 1px solid gray; }\n  .sort-by-ul li:last-child {\n    border-bottom: none; }\n  .sort-by-ul li:hover {\n    opacity: .7; }\n\n.sort-bar-container {\n  display: flex;\n  justify-content: space-between;\n  margin: 20px; }\n", ""]);
+	exports.push([module.id, ".product-container {\n  width: 80%;\n  margin: 0 auto;\n  background: white;\n  height: 90%;\n  overflow-y: auto; }\n\n.product-item-detail-container {\n  width: 250px;\n  height: 300px;\n  background: whitesmoke;\n  border: 1px solid black;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  margin: 20px; }\n\n.add-to-cart {\n  background: #ff9e00;\n  text-align: center;\n  padding: 10px;\n  cursor: pointer; }\n\n.add-to-cart:hover {\n  opacity: .8; }\n\n.item-detail-info {\n  display: flex;\n  flex-direction: column; }\n  .item-detail-info h4 {\n    padding: 5px;\n    font-size: 14px; }\n  .item-detail-info div {\n    padding: 5px;\n    font-size: 12px;\n    text-align: right; }\n\n.product-ul {\n  width: 80%;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  margin: 0 auto; }\n\n.item-image-container {\n  width: 210px;\n  margin: 0 auto;\n  padding-top: 15px;\n  height: 195px; }\n  .item-image-container img {\n    height: 100%;\n    width: 100%; }\n\n.sort-by {\n  width: 52px;\n  border: 1px solid darkgray;\n  padding: 5px;\n  margin: 5px;\n  cursor: pointer;\n  position: relative;\n  margin-left: 100px;\n  font-size: 14px; }\n\n.sort-by-ul {\n  display: flex;\n  position: absolute;\n  background: whitesmoke;\n  top: 24px;\n  right: -1px;\n  border: 1px solid darkgray;\n  flex-direction: column;\n  z-index: 1;\n  width: 100px; }\n  .sort-by-ul li {\n    padding: 5px;\n    cursor: pointer;\n    border-bottom: 1px solid gray; }\n  .sort-by-ul li:last-child {\n    border-bottom: none; }\n  .sort-by-ul li:hover {\n    opacity: .7; }\n\n.sort-bar-container {\n  display: flex;\n  justify-content: space-between;\n  margin: 20px; }\n", ""]);
 	
 	// exports
 
@@ -23987,7 +23987,7 @@
 	
 	var _filter2 = _interopRequireDefault(_filter);
 	
-	var _filter_actions = __webpack_require__(219);
+	var _filter_actions = __webpack_require__(221);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -24034,7 +24034,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(240);
+	__webpack_require__(219);
 	
 	var Filter = function (_React$Component) {
 	  _inherits(Filter, _React$Component);
@@ -24079,29 +24079,45 @@
 	            'li',
 	            null,
 	            _react2.default.createElement('input', { type: 'checkbox', onChange: this.updateFilters, className: 'cbox',
-	              checked: this.props.filters[1200] ? true : false, value: '1200' }),
-	            'Less than $20'
+	              checked: this.props.filters[1200] ? true : false, value: '1200', id: '$' }),
+	            _react2.default.createElement(
+	              'label',
+	              { htmlFor: '$' },
+	              'Less than $20'
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
 	            _react2.default.createElement('input', { type: 'checkbox', onChange: this.updateFilters, className: 'cbox',
-	              checked: this.props.filters['sleeve'] ? true : false, value: 'sleeve' }),
-	            'Sleeves'
+	              checked: this.props.filters['sleeve'] ? true : false, value: 'sleeve', id: 'sleeve' }),
+	            _react2.default.createElement(
+	              'label',
+	              { htmlFor: 'sleeve' },
+	              'Sleeves'
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
 	            _react2.default.createElement('input', { type: 'checkbox', onChange: this.updateFilters, className: 'cbox',
-	              checked: this.props.filters['straw'] ? true : false, value: 'straw' }),
-	            'Straws'
+	              checked: this.props.filters['straw'] ? true : false, value: 'straw', id: 'straw' }),
+	            _react2.default.createElement(
+	              'label',
+	              { htmlFor: 'straw' },
+	              'Straws'
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
 	            _react2.default.createElement('input', { type: 'checkbox', onChange: this.updateFilters, className: 'cbox',
-	              checked: this.props.filters['cufflinks'] ? true : false, value: 'cufflinks' }),
-	            'Cufflinks'
+	              checked: this.props.filters['cufflinks'] ? true : false, value: 'cufflinks', id: 'cuff' }),
+	            _react2.default.createElement(
+	              'label',
+	              { htmlFor: 'cuff' },
+	              'Cufflinks'
+	            )
 	          )
 	        )
 	      );
@@ -24115,6 +24131,46 @@
 
 /***/ },
 /* 219 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(220);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(216)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./filter.scss", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./filter.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 220 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(215)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".checkbox-ul {\n  display: flex;\n  position: absolute;\n  background: whitesmoke;\n  top: 24px;\n  left: -1px;\n  border: 1px solid darkgray;\n  flex-direction: column;\n  z-index: 1;\n  width: 150px; }\n  .checkbox-ul li {\n    padding: 5px;\n    cursor: pointer;\n    border-bottom: 1px solid gray; }\n  .checkbox-ul li:last-child {\n    border-bottom: none; }\n  .checkbox-ul li:hover {\n    opacity: .7; }\n\n.checkbox-div {\n  width: 42px;\n  border: 1px solid darkgray;\n  padding: 5px;\n  margin: 5px;\n  cursor: pointer;\n  position: relative;\n  font-size: 14px; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 221 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24142,7 +24198,7 @@
 	};
 
 /***/ },
-/* 220 */
+/* 222 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24162,7 +24218,7 @@
 	};
 
 /***/ },
-/* 221 */
+/* 223 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24197,7 +24253,7 @@
 	};
 
 /***/ },
-/* 222 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24208,7 +24264,7 @@
 	
 	var _reactRedux = __webpack_require__(180);
 	
-	var _navbar = __webpack_require__(223);
+	var _navbar = __webpack_require__(225);
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
@@ -24227,7 +24283,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_navbar2.default);
 
 /***/ },
-/* 223 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24242,7 +24298,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _cart_container = __webpack_require__(224);
+	var _cart_container = __webpack_require__(226);
 	
 	var _cart_container2 = _interopRequireDefault(_cart_container);
 	
@@ -24254,7 +24310,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(226);
+	__webpack_require__(228);
 	
 	var NavBar = function (_React$Component) {
 	  _inherits(NavBar, _React$Component);
@@ -24322,7 +24378,7 @@
 	exports.default = NavBar;
 
 /***/ },
-/* 224 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24333,11 +24389,11 @@
 	
 	var _reactRedux = __webpack_require__(180);
 	
-	var _cart = __webpack_require__(225);
+	var _cart = __webpack_require__(227);
 	
 	var _cart2 = _interopRequireDefault(_cart);
 	
-	var _cart_actions = __webpack_require__(221);
+	var _cart_actions = __webpack_require__(223);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -24358,7 +24414,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_cart2.default);
 
 /***/ },
-/* 225 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24458,13 +24514,13 @@
 	exports.default = Cart;
 
 /***/ },
-/* 226 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(227);
+	var content = __webpack_require__(229);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(216)(content, {});
@@ -24484,7 +24540,7 @@
 	}
 
 /***/ },
-/* 227 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(215)();
@@ -24498,13 +24554,13 @@
 
 
 /***/ },
-/* 228 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(229);
+	var content = __webpack_require__(231);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(216)(content, {});
@@ -24524,7 +24580,7 @@
 	}
 
 /***/ },
-/* 229 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(215)();
@@ -24538,7 +24594,7 @@
 
 
 /***/ },
-/* 230 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24549,11 +24605,11 @@
 	
 	var _redux = __webpack_require__(187);
 	
-	var _root_reducer = __webpack_require__(231);
+	var _root_reducer = __webpack_require__(233);
 	
 	var _root_reducer2 = _interopRequireDefault(_root_reducer);
 	
-	var _root_middleware = __webpack_require__(236);
+	var _root_middleware = __webpack_require__(238);
 	
 	var _root_middleware2 = _interopRequireDefault(_root_middleware);
 	
@@ -24566,7 +24622,7 @@
 	exports.default = configureStore;
 
 /***/ },
-/* 231 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24575,21 +24631,21 @@
 	  value: true
 	});
 	
-	var _product_reducer = __webpack_require__(232);
+	var _product_reducer = __webpack_require__(234);
 	
 	var _product_reducer2 = _interopRequireDefault(_product_reducer);
 	
 	var _redux = __webpack_require__(187);
 	
-	var _cart_reducer = __webpack_require__(233);
+	var _cart_reducer = __webpack_require__(235);
 	
 	var _cart_reducer2 = _interopRequireDefault(_cart_reducer);
 	
-	var _sort_reducer = __webpack_require__(234);
+	var _sort_reducer = __webpack_require__(236);
 	
 	var _sort_reducer2 = _interopRequireDefault(_sort_reducer);
 	
-	var _filter_reducer = __webpack_require__(235);
+	var _filter_reducer = __webpack_require__(237);
 	
 	var _filter_reducer2 = _interopRequireDefault(_filter_reducer);
 	
@@ -24605,7 +24661,7 @@
 	exports.default = RootReducer;
 
 /***/ },
-/* 232 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24632,7 +24688,7 @@
 	exports.default = ProductReducer;
 
 /***/ },
-/* 233 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24641,7 +24697,7 @@
 	  value: true
 	});
 	
-	var _cart_actions = __webpack_require__(221);
+	var _cart_actions = __webpack_require__(223);
 	
 	var cartReducer = function cartReducer() {
 	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -24666,7 +24722,7 @@
 	exports.default = cartReducer;
 
 /***/ },
-/* 234 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24675,7 +24731,7 @@
 	  value: true
 	});
 	
-	var _sort_actions = __webpack_require__(220);
+	var _sort_actions = __webpack_require__(222);
 	
 	var SortReducer = function SortReducer() {
 	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'Price: Low';
@@ -24692,7 +24748,7 @@
 	exports.default = SortReducer;
 
 /***/ },
-/* 235 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24701,7 +24757,7 @@
 	  value: true
 	});
 	
-	var _filter_actions = __webpack_require__(219);
+	var _filter_actions = __webpack_require__(221);
 	
 	var FilterReducer = function FilterReducer() {
 	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -24724,7 +24780,7 @@
 	exports.default = FilterReducer;
 
 /***/ },
-/* 236 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24733,7 +24789,7 @@
 	  value: true
 	});
 	
-	var _product_middleware = __webpack_require__(237);
+	var _product_middleware = __webpack_require__(239);
 	
 	var _product_middleware2 = _interopRequireDefault(_product_middleware);
 	
@@ -24746,7 +24802,7 @@
 	exports.default = RootMiddleware;
 
 /***/ },
-/* 237 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24755,7 +24811,7 @@
 	  value: true
 	});
 	
-	var _product_api_util = __webpack_require__(238);
+	var _product_api_util = __webpack_require__(240);
 	
 	var _product_actions = __webpack_require__(179);
 	
@@ -24780,7 +24836,7 @@
 	exports.default = ProductMiddleware;
 
 /***/ },
-/* 238 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24790,7 +24846,7 @@
 	});
 	exports.fetchProducts = undefined;
 	
-	var _jquery = __webpack_require__(239);
+	var _jquery = __webpack_require__(241);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
@@ -24808,7 +24864,7 @@
 	};
 
 /***/ },
-/* 239 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -35031,46 +35087,6 @@
 	
 	return jQuery;
 	} );
-
-
-/***/ },
-/* 240 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(241);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(216)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./filter.scss", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./filter.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 241 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(215)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".checkbox-ul {\n  display: flex;\n  position: absolute;\n  background: whitesmoke;\n  top: 26px;\n  left: -1px;\n  border: 1px solid black;\n  flex-direction: column;\n  z-index: 1;\n  width: 150px; }\n  .checkbox-ul li {\n    padding: 5px;\n    cursor: pointer;\n    border-bottom: 1px solid gray; }\n  .checkbox-ul li:last-child {\n    border-bottom: none; }\n  .checkbox-ul li:hover {\n    opacity: .7; }\n\n.checkbox-div {\n  width: 50px;\n  border: 1px solid black;\n  padding: 5px;\n  margin: 5px;\n  cursor: pointer;\n  position: relative; }\n", ""]);
-	
-	// exports
 
 
 /***/ }

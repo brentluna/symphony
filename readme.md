@@ -4,6 +4,8 @@
 
 This is an example of an e-commerce store's product page. 
 
+![screenshot](./screenshot.png)
+
 ## Technologies Used
 
 - JavaScript 
@@ -65,9 +67,43 @@ const mapStateToProps = state => {
   });
 }
 ```
+Along with the ability to sort the products, you can also filter them on
+categories such as sleeves, straws, cufflinks, and less than $20. I do this
+using redux to keep track of the user selected filters and then select the
+products that match the selected filteres before they are sorted.
 
+```
+let filteredProducts = [];
+    if (!Object.keys(state.filters).length) {
+      filteredProducts = state.products.products;
+    }
+    for (let filter in state.filters) {
+      
+      if (filter === '1200') {
+        let newProds = state.products.products.filter(prod => {
+          return prod.msrpInCents < 1200; 
+        }); 
+        filteredProducts = filteredProducts.concat(newProds);
+      } else {
+
+        let newProds = state.products.products.filter(prod => {
+          return prod.name.toLowerCase().indexOf(filter) !== -1
+        });
+        filteredProducts = filteredProducts.concat(newProds);
+      }
+    }
+    sortedProducts = filteredProducts.sort(sortType);
+```
 I also added a client side cart, where you can click "Add to Cart" on a product
 and it will be viewable via a drop down from the cart icon. I utilized redux to
 manage actions to update the cart.
+
+## Future Directions 
+- Utilize React Router and create a product page component where you can view
+  more on each product
+
+- Add unit jest unit testing
+
+- Polish up the design
 
 

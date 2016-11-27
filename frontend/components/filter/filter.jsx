@@ -30,13 +30,21 @@ class Filter extends React.Component {
         Filters
         <ul className='hidden' id='checkbox-ul'>
           <li><input type='checkbox' onChange={this.updateFilters} className='cbox' 
-            checked={this.props.filters[1200] ? true : false} value='1200'/>Less than $20</li>
+              checked={this.props.filters[1200] ? true : false} value='1200' id='$'/>
+            <label htmlFor='$'>Less than $20</label>
+        </li>
         <li><input type='checkbox' onChange={this.updateFilters} className='cbox'
-          checked={this.props.filters['sleeve'] ? true: false} value='sleeve' />Sleeves</li>
+            checked={this.props.filters['sleeve'] ? true: false} value='sleeve' id='sleeve' />
+          <label htmlFor='sleeve'>Sleeves</label>
+        </li>
         <li><input type='checkbox' onChange ={this.updateFilters} className='cbox'
-          checked={this.props.filters['straw'] ? true: false} value='straw'/>Straws</li>
+            checked={this.props.filters['straw'] ? true: false} value='straw' id='straw'/>
+          <label htmlFor='straw'>Straws</label>
+        </li>
         <li><input type='checkbox' onChange={this.updateFilters} className='cbox'
-          checked={this.props.filters['cufflinks'] ? true : false} value='cufflinks'/>Cufflinks</li>
+            checked={this.props.filters['cufflinks'] ? true : false} value='cufflinks' id='cuff'/>
+          <label htmlFor='cuff'>Cufflinks</label>
+        </li>
         </ul>
       </div>
     );
