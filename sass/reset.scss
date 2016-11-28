@@ -51,3 +51,7 @@ table {
 .hidden {
   display: none;
 }
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}

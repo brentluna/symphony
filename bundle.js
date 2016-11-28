@@ -24351,11 +24351,6 @@
 	              'h1',
 	              null,
 	              this.props.title
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Water is the essence of moisture...'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -24549,7 +24544,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".navbar {\n  background: #0e51a7;\n  width: 100%;\n  height: 70px;\n  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); }\n\n.navbar-group {\n  background: #0e51a7;\n  color: white;\n  padding: 16px 0px;\n  width: 80%;\n  display: flex;\n  justify-content: space-between;\n  margin: 0 auto; }\n  .navbar-group h1 {\n    font-family: 'Comfortaa', cursive;\n    font-size: 22px; }\n  .navbar-group p {\n    font-family: 'Poiret One', cursive;\n    font-size: 14px; }\n\n.title-container {\n  margin-left: 15px; }\n\n.material-icons {\n  margin-left: 200px;\n  cursor: pointer; }\n\n.remove-icon {\n  margin-left: 0;\n  margin-right: 2px; }\n\n.cart-button-remove-div {\n  display: flex;\n  align-items: center; }\n\n.cart-div {\n  z-index: 1;\n  width: 250px; }\n\n/*\n.cart-div:hover {\n  .cart-ul {\n    display: flex;\n  }\n}\n*/\n.cart-ul {\n  display: flex;\n  flex-direction: column;\n  background: whitesmoke;\n  padding: 10px;\n  color: black;\n  font-size: 12px;\n  border: 1px solid gray; }\n\n.cart-li {\n  display: flex;\n  justify-content: space-between;\n  padding: 5px;\n  border-bottom: 1px solid gray; }\n\n.cart-li:last-child {\n  border-bottom: none; }\n\n@media (max-width: 850px) {\n  .navbar-group p {\n    display: none; }\n  .navbar-group h1 {\n    display: none; } }\n", ""]);
+	exports.push([module.id, ".navbar {\n  background: #0e51a7;\n  width: 100%;\n  height: 60px;\n  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); }\n\n.navbar-group {\n  background: #0e51a7;\n  color: white;\n  padding: 16px 0px;\n  width: 80%;\n  display: flex;\n  justify-content: space-between;\n  margin: 0 auto; }\n  .navbar-group h1 {\n    font-family: 'Comfortaa', cursive;\n    font-size: 22px; }\n  .navbar-group p {\n    font-family: 'Poiret One', cursive;\n    font-size: 14px; }\n\n.title-container {\n  margin-left: 15px; }\n\n.material-icons {\n  margin-left: 200px;\n  cursor: pointer; }\n\n.remove-icon {\n  margin-left: 0;\n  margin-right: 2px; }\n\n.cart-button-remove-div {\n  display: flex;\n  align-items: center; }\n\n.cart-div {\n  z-index: 1;\n  width: 250px; }\n\n/*\n.cart-div:hover {\n  .cart-ul {\n    display: flex;\n  }\n}\n*/\n.cart-ul {\n  display: flex;\n  flex-direction: column;\n  background: whitesmoke;\n  padding: 10px;\n  color: black;\n  font-size: 12px;\n  border: 1px solid gray; }\n\n.cart-li {\n  display: flex;\n  justify-content: space-between;\n  padding: 5px;\n  border-bottom: 1px solid gray; }\n\n.cart-li:last-child {\n  border-bottom: none; }\n\n@media (max-width: 850px) {\n  .navbar-group p {\n    display: none; }\n  .navbar-group h1 {\n    display: none; } }\n", ""]);
 	
 	// exports
 
@@ -24589,7 +24584,7 @@
 	
 	
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1;\n  background: #6697D3; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.hidden {\n  display: none; }\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1;\n  background: #6697D3; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n.hidden {\n  display: none; }\n\n.product-container::-webkit-scrollbar {\n  display: none; }\n", ""]);
 	
 	// exports
 

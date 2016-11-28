@@ -21,7 +21,6 @@ class NavBar extends React.Component {
         <div className='navbar-group'>
           <div className='title-container'>
               <h1>{this.props.title}</h1> 
-            <p>Water is the essence of moisture...</p>
           </div>
           <div className='cart-div'>
             <i onClick={this.toggleClass}className="material-icons">shopping_cart</i>
