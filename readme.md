@@ -19,7 +19,7 @@ Upon entering the page, I utilized ajax to hit an api and get the product info
 for the page. I store that data on the client side using Redux, and render the
 page using React Components. 
 
-```
+```javascript
 export const fetchProducts = success => (
   $.ajax({
     method: 'get',
@@ -33,7 +33,7 @@ export const fetchProducts = success => (
 I added a "Sort By" feature to the product page that utilizes redux to keep
 track of the current "Sort By" method, and sorts the products appropriately.
 
-```
+```javascript
 const sortMap = {
   'Price: Low': (a, b) => {
     return Math.sign(a.msrpInCents - b.msrpInCents);
@@ -74,27 +74,27 @@ categories such as sleeves, straws, cufflinks, and less than $20. I do this
 using redux to keep track of the user selected filters and then select the
 products that match the selected filteres before they are sorted.
 
-```
+```javascript
 let filteredProducts = [];
-    if (!Object.keys(state.filters).length) {
-      filteredProducts = state.products.products;
-    }
-    for (let filter in state.filters) {
-      
-      if (filter === '1200') {
-        let newProds = state.products.products.filter(prod => {
-          return prod.msrpInCents < 1200; 
-        }); 
-        filteredProducts = filteredProducts.concat(newProds);
-      } else {
+if (!Object.keys(state.filters).length) {
+  filteredProducts = state.products.products;
+}
+for (let filter in state.filters) {
+  
+  if (filter === '1200') {
+    let newProds = state.products.products.filter(prod => {
+      return prod.msrpInCents < 1200; 
+    }); 
+    filteredProducts = filteredProducts.concat(newProds);
+  } else {
 
-        let newProds = state.products.products.filter(prod => {
-          return prod.name.toLowerCase().indexOf(filter) !== -1
-        });
-        filteredProducts = filteredProducts.concat(newProds);
-      }
-    }
-    sortedProducts = filteredProducts.sort(sortType);
+    let newProds = state.products.products.filter(prod => {
+      return prod.name.toLowerCase().indexOf(filter) !== -1
+    });
+    filteredProducts = filteredProducts.concat(newProds);
+  }
+}
+sortedProducts = filteredProducts.sort(sortType);
 ```
 I also added a client side cart, where you can click "Add to Cart" on a product
 and it will be viewable via a drop down from the cart icon. I utilized redux to
