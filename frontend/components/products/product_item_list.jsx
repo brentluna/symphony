@@ -31,6 +31,7 @@ class ProductItemList extends React.Component {
                   name={product.name}
                   addToCart={() => this.props.receiveProduct(product.name)}
                   image={`http:${product.mainImage.ref}`}
+                  id={product.id}
                   key={product.id} />); 
       });
     }

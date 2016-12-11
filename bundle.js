@@ -21510,6 +21510,10 @@
 	
 	var _product_item_list_container2 = _interopRequireDefault(_product_item_list_container);
 	
+	var _product_page_container = __webpack_require__(296);
+	
+	var _product_page_container2 = _interopRequireDefault(_product_page_container);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Root = function Root(_ref) {
@@ -21529,7 +21533,8 @@
 	      _react2.default.createElement(
 	        _reactRouter.Route,
 	        { path: '/', component: _app2.default, onEnter: fetchItems },
-	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _product_item_list_container2.default })
+	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _product_item_list_container2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: ':productId', component: _product_page_container2.default })
 	      )
 	    )
 	  );
@@ -38935,6 +38940,7 @@
 	              return _this3.props.receiveProduct(product.name);
 	            },
 	            image: 'http:' + product.mainImage.ref,
+	            id: product.id,
 	            key: product.id }));
 	        });
 	      }
@@ -38995,37 +39001,45 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouter = __webpack_require__(209);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	__webpack_require__(280);
+	
 	
 	var ProductItemDetail = function ProductItemDetail(_ref) {
 	  var price = _ref.price,
 	      image = _ref.image,
 	      name = _ref.name,
-	      addToCart = _ref.addToCart;
-	
+	      addToCart = _ref.addToCart,
+	      id = _ref.id;
 	  var priceInDollars = (price / 60).toFixed(2);
+	
 	  return _react2.default.createElement(
 	    'li',
 	    { className: 'product-item-detail-container' },
 	    _react2.default.createElement(
-	      'div',
-	      { className: 'item-image-container' },
-	      _react2.default.createElement('img', { src: image })
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'item-detail-info' },
+	      _reactRouter.Link,
+	      { to: '/' + id },
 	      _react2.default.createElement(
-	        'h4',
-	        null,
-	        name
+	        'div',
+	        { className: 'item-image-container' },
+	        _react2.default.createElement('img', { src: image })
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        null,
-	        '$' + priceInDollars
+	        { className: 'item-detail-info' },
+	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          name
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          '$' + priceInDollars
+	        )
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -39919,6 +39933,65 @@
 	
 	// exports
 
+
+/***/ },
+/* 296 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _product_page = __webpack_require__(297);
+	
+	var _product_page2 = _interopRequireDefault(_product_page);
+	
+	var _reactRedux = __webpack_require__(179);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var mapStateToProps = function mapStateToProps(state) {
+	  return {};
+	};
+	
+	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+	  return {};
+	};
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_product_page2.default);
+
+/***/ },
+/* 297 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ProductPage = function ProductPage() {
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'product-container' },
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'Inside Product'
+	    )
+	  );
+	};
+	
+	exports.default = ProductPage;
 
 /***/ }
 /******/ ]);
