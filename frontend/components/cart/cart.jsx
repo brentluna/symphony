@@ -18,8 +18,8 @@ class Cart extends React.Component {
             <div className='cart-button-remove-div'>
               <i className="material-icons remove-icon" 
                 onClick={() => this.props.removeProduct(item)}>remove</i>
-            <div className='cart-name'>{item}</div>
-          </div>
+              <div className='cart-name'>{item}</div>
+            </div>
             <div className='cart-qty'>{this.props.cart[item]}</div> 
           </li>
         );
