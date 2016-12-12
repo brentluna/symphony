@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router';
+
 require('../../../sass/product_page.scss');
 require('../../../sass/reset.scss');
 
@@ -12,9 +14,14 @@ const ProductPage = (props) => {
       <div className='product-container'>
         <div className='page-container'>
           <div className='title-container'>
-          <h1 className='page-title'>
-            {product.name} 
-            </h1>
+            <div className='title-back-div'>
+              <Link to={'/'}> 
+                <i className="material-icons back-button">navigate_before</i>
+              </Link> 
+              <h1 className='page-title'>
+                {product.name} 
+              </h1>
+            </div>
             <div className='price-button'>
               <p>Price: ${priceInDollars}</p>
               <input type='submit' value='Add To Cart'

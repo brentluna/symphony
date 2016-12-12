@@ -29496,6 +29496,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouter = __webpack_require__(209);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	__webpack_require__(288);
@@ -29517,9 +29519,22 @@
 	          'div',
 	          { className: 'title-container' },
 	          _react2.default.createElement(
-	            'h1',
-	            { className: 'page-title' },
-	            product.name
+	            'div',
+	            { className: 'title-back-div' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/' },
+	              _react2.default.createElement(
+	                'i',
+	                { className: 'material-icons back-button' },
+	                'navigate_before'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'h1',
+	              { className: 'page-title' },
+	              product.name
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'div',
@@ -29594,7 +29609,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".page-detail {\n  display: flex;\n  justify-content: space-around;\n  padding: 20px; }\n\n.page-container {\n  margin: 0 auto;\n  padding: 30px;\n  font-family: sans-serif; }\n\n.title-container {\n  display: flex;\n  justify-content: space-between; }\n  .title-container input {\n    margin-top: 10px;\n    padding: 5px 10px;\n    background: #ff9e00;\n    cursor: pointer;\n    border: 1px solid black; }\n\n.page-title {\n  font-size: 22px; }\n\n.page-img {\n  margin: 0 auto;\n  width: 400px;\n  height: 400px; }\n", ""]);
+	exports.push([module.id, ".page-detail {\n  display: flex;\n  justify-content: space-around;\n  padding: 20px; }\n\n.back-button {\n  margin: 0 10px; }\n\n.title-back-div {\n  display: flex;\n  justify-content: space-between; }\n\n.page-container {\n  margin: 0 auto;\n  padding: 30px;\n  font-family: sans-serif; }\n\n.title-container {\n  display: flex;\n  justify-content: space-between; }\n  .title-container input {\n    margin-top: 10px;\n    padding: 5px 10px;\n    background: #ff9e00;\n    cursor: pointer;\n    border: 1px solid black; }\n\n.page-title {\n  font-size: 22px; }\n\n.page-img {\n  margin: 0 auto;\n  width: 400px;\n  height: 400px; }\n", ""]);
 	
 	// exports
 
