@@ -1,7 +1,11 @@
 import React from 'react';
 require('../../../sass/product_page.scss');
+require('../../../sass/reset.scss');
 
-const ProductPage = ({product}) => {
+const ProductPage = (props) => {
+
+  const product = props.product;
+
   if (product)  {
     let priceInDollars = (product.msrpInCents / 60).toFixed(2);
     return (
@@ -13,7 +17,8 @@ const ProductPage = ({product}) => {
             </h1>
             <div className='price-button'>
               <p>Price: ${priceInDollars}</p>
-              <input type='submit' value='Add To Cart' />
+              <input type='submit' value='Add To Cart'
+                onClick={() => props.addToCart(product.name)}/>
             </div>
           </div>
           <div className='page-img'>
@@ -29,7 +34,6 @@ const ProductPage = ({product}) => {
   }  else {
     return (
       <div className='product-container'>
-       empty 
       </div>
     )
   }

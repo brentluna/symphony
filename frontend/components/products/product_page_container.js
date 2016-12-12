@@ -1,6 +1,6 @@
 import ProductPage from './product_page';
 import {connect} from 'react-redux';
-
+import {receiveProduct} from '../../actions/cart_actions';
 
 const mapStateToProps = (state, ownProps) => {
 
@@ -16,7 +16,7 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-
+  addToCart: prod =>  dispatch(receiveProduct(prod))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductPage);
