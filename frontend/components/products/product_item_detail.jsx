@@ -2,7 +2,8 @@ import React from 'react';
 require('../../../sass/product.scss');
 import {Link} from 'react-router';
 
-const ProductItemDetail = ({price, image, name, addToCart, id}) => { let priceInDollars = (price / 60).toFixed(2);
+const ProductItemDetail = ({price, image, name, addToCart, id}) => { 
+  let priceInDollars = (price / 60).toFixed(2);
 
   return(
     <li className='product-item-detail-container'>

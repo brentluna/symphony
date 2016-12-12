@@ -39014,6 +39014,7 @@
 	      name = _ref.name,
 	      addToCart = _ref.addToCart,
 	      id = _ref.id;
+	
 	  var priceInDollars = (price / 60).toFixed(2);
 	
 	  return _react2.default.createElement(
@@ -39952,8 +39953,17 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var mapStateToProps = function mapStateToProps(state) {
-	  return {};
+	var mapStateToProps = function mapStateToProps(state, ownProps) {
+	
+	  var product = void 0;
+	  if (state.products.products && state.products.products.length) {
+	    product = state.products.products.filter(function (prod) {
+	      return prod.id === parseInt(ownProps.params.productId);
+	    })[0];
+	  }
+	  return {
+	    product: product
+	  };
 	};
 	
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
@@ -39978,20 +39988,105 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var ProductPage = function ProductPage() {
+	__webpack_require__(298);
 	
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'product-container' },
-	    _react2.default.createElement(
-	      'h1',
-	      null,
-	      'Inside Product'
-	    )
-	  );
+	var ProductPage = function ProductPage(_ref) {
+	  var product = _ref.product;
+	
+	  if (product) {
+	    var priceInDollars = (product.msrpInCents / 60).toFixed(2);
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'product-container' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'page-container' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'title-container' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'page-title' },
+	            product.name
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'price-button' },
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Price: $',
+	              priceInDollars
+	            ),
+	            _react2.default.createElement('input', { type: 'submit', value: 'Add To Cart' })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'page-img' },
+	          _react2.default.createElement('img', { src: 'http:' + product.mainImage.ref })
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'page-detail' },
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Water is the essence of moisture....'
+	          )
+	        )
+	      )
+	    );
+	  } else {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'product-container' },
+	      'empty'
+	    );
+	  }
 	};
 	
 	exports.default = ProductPage;
+
+/***/ },
+/* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(299);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(283)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./product_page.scss", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./product_page.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 299 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(282)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".page-detail {\n  display: flex;\n  justify-content: space-between; }\n\n.page-container {\n  margin: 0 auto;\n  padding: 30px; }\n\n.title-container {\n  display: flex;\n  justify-content: space-between; }\n\n.page-img {\n  margin: 0 auto;\n  width: 400px;\n  height: 400px; }\n", ""]);
+	
+	// exports
+
 
 /***/ }
 /******/ ]);
